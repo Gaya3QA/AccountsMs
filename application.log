@@ -1,20 +1,40 @@
-2025-01-13T22:10:02.268-06:00  INFO 25240 --- [AccountsMs] [Test worker] c.B.A.AccountsMsApplicationTests         : Starting AccountsMsApplicationTests using Java 17.0.10 with PID 25240 (started by srang in C:\Softwares\SpringbootApplications\BankingApplication1\AccountsMs)
-2025-01-13T22:10:02.276-06:00  INFO 25240 --- [AccountsMs] [Test worker] c.B.A.AccountsMsApplicationTests         : No active profile set, falling back to 1 default profile: "default"
-2025-01-13T22:10:03.216-06:00  INFO 25240 --- [AccountsMs] [Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2025-01-13T22:10:03.404-06:00  INFO 25240 --- [AccountsMs] [Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 178 ms. Found 1 JPA repository interface.
-2025-01-13T22:10:04.029-06:00  INFO 25240 --- [AccountsMs] [Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2025-01-13T22:10:04.187-06:00  INFO 25240 --- [AccountsMs] [Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.3.Final
-2025-01-13T22:10:04.281-06:00  INFO 25240 --- [AccountsMs] [Test worker] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2025-01-13T22:10:04.757-06:00  INFO 25240 --- [AccountsMs] [Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2025-01-13T22:10:04.803-06:00  INFO 25240 --- [AccountsMs] [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2025-01-13T22:10:05.682-06:00  INFO 25240 --- [AccountsMs] [Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@638977e0
-2025-01-13T22:10:05.686-06:00  INFO 25240 --- [AccountsMs] [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2025-01-13T22:10:05.826-06:00  WARN 25240 --- [AccountsMs] [Test worker] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2025-01-13T22:10:05.826-06:00  WARN 25240 --- [AccountsMs] [Test worker] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
-2025-01-13T22:10:06.783-06:00  INFO 25240 --- [AccountsMs] [Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2025-01-13T22:10:07.630-06:00  INFO 25240 --- [AccountsMs] [Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2025-01-13T22:10:08.598-06:00  WARN 25240 --- [AccountsMs] [Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2025-01-13T22:10:09.233-06:00  INFO 25240 --- [AccountsMs] [Test worker] c.B.A.AccountsMsApplicationTests         : Started AccountsMsApplicationTests in 7.282 seconds (process running for 9.633)
-2025-01-13T22:10:10.246-06:00  INFO 25240 --- [AccountsMs] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2025-01-13T22:10:10.251-06:00  INFO 25240 --- [AccountsMs] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2025-01-13T22:10:10.475-06:00  INFO 25240 --- [AccountsMs] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-01-16T09:29:00.041-06:00  INFO 22336 --- [AccountsMs] [Test worker] c.B.A.AccountsMsApplicationTests         : Starting AccountsMsApplicationTests using Java 17.0.10 with PID 22336 (started by srang in C:\Softwares\SpringbootApplications\BankingApplication1\AccountsMs)
+2025-01-16T09:29:00.051-06:00  INFO 22336 --- [AccountsMs] [Test worker] c.B.A.AccountsMsApplicationTests         : No active profile set, falling back to 1 default profile: "default"
+2025-01-16T09:29:01.021-06:00  INFO 22336 --- [AccountsMs] [Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-01-16T09:29:01.268-06:00  INFO 22336 --- [AccountsMs] [Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 234 ms. Found 1 JPA repository interface.
+2025-01-16T09:29:02.575-06:00  INFO 22336 --- [AccountsMs] [Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-01-16T09:29:02.851-06:00  INFO 22336 --- [AccountsMs] [Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.3.Final
+2025-01-16T09:29:02.959-06:00  INFO 22336 --- [AccountsMs] [Test worker] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-01-16T09:29:03.470-06:00  INFO 22336 --- [AccountsMs] [Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-01-16T09:29:03.518-06:00  INFO 22336 --- [AccountsMs] [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-01-16T09:29:04.421-06:00  INFO 22336 --- [AccountsMs] [Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@77f03916
+2025-01-16T09:29:04.434-06:00  INFO 22336 --- [AccountsMs] [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-01-16T09:29:04.561-06:00  WARN 22336 --- [AccountsMs] [Test worker] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-01-16T09:29:04.562-06:00  WARN 22336 --- [AccountsMs] [Test worker] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-01-16T09:29:05.725-06:00  INFO 22336 --- [AccountsMs] [Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-01-16T09:29:06.227-06:00  INFO 22336 --- [AccountsMs] [Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-01-16T09:29:07.135-06:00  WARN 22336 --- [AccountsMs] [Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-01-16T09:29:07.750-06:00  INFO 22336 --- [AccountsMs] [Test worker] c.B.A.AccountsMsApplicationTests         : Started AccountsMsApplicationTests in 8.132 seconds (process running for 11.738)
+2025-01-16T09:29:08.708-06:00  INFO 22336 --- [AccountsMs] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-01-16T09:29:08.711-06:00  INFO 22336 --- [AccountsMs] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-01-16T09:29:08.872-06:00  INFO 22336 --- [AccountsMs] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-01-16T09:35:44.417-06:00  INFO 3476 --- [AccountsMs] [Test worker] c.B.A.AccountsMsApplicationTests         : Starting AccountsMsApplicationTests using Java 17.0.10 with PID 3476 (started by srang in C:\Softwares\SpringbootApplications\BankingApplication1\AccountsMs)
+2025-01-16T09:35:44.418-06:00  INFO 3476 --- [AccountsMs] [Test worker] c.B.A.AccountsMsApplicationTests         : No active profile set, falling back to 1 default profile: "default"
+2025-01-16T09:35:45.249-06:00  INFO 3476 --- [AccountsMs] [Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-01-16T09:35:45.453-06:00  INFO 3476 --- [AccountsMs] [Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 192 ms. Found 1 JPA repository interface.
+2025-01-16T09:35:46.221-06:00  INFO 3476 --- [AccountsMs] [Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-01-16T09:35:46.324-06:00  INFO 3476 --- [AccountsMs] [Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.3.Final
+2025-01-16T09:35:46.370-06:00  INFO 3476 --- [AccountsMs] [Test worker] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-01-16T09:35:46.794-06:00  INFO 3476 --- [AccountsMs] [Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-01-16T09:35:46.830-06:00  INFO 3476 --- [AccountsMs] [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-01-16T09:35:47.664-06:00  INFO 3476 --- [AccountsMs] [Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@714c74eb
+2025-01-16T09:35:47.672-06:00  INFO 3476 --- [AccountsMs] [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-01-16T09:35:47.815-06:00  WARN 3476 --- [AccountsMs] [Test worker] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-01-16T09:35:47.815-06:00  WARN 3476 --- [AccountsMs] [Test worker] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-01-16T09:35:48.696-06:00  INFO 3476 --- [AccountsMs] [Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-01-16T09:35:49.200-06:00  INFO 3476 --- [AccountsMs] [Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-01-16T09:35:49.968-06:00  WARN 3476 --- [AccountsMs] [Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-01-16T09:35:50.552-06:00  INFO 3476 --- [AccountsMs] [Test worker] c.B.A.AccountsMsApplicationTests         : Started AccountsMsApplicationTests in 6.498 seconds (process running for 7.932)
+2025-01-16T09:35:51.229-06:00  INFO 3476 --- [AccountsMs] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-01-16T09:35:51.231-06:00  INFO 3476 --- [AccountsMs] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-01-16T09:35:51.448-06:00  INFO 3476 --- [AccountsMs] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
