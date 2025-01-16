@@ -28,7 +28,7 @@ public class AccountsImpl implements AccountsInterface{
     public AccountsModel createAccount(Long userId, AccountsModel account) {
         // Get the user details using RestTemplate to communicate with the Users Microservice
         // Fetch user details from the Users microservice using RestTemplate
-        String userServiceUrl = "http://localhost:8080/user/" +userId;
+        String userServiceUrl = "http://host.docker.internal:8080/user/" +userId;
         UserModel user = restTemplate.getForObject(userServiceUrl, UserModel.class);
 
         if (user == null) {
@@ -43,6 +43,7 @@ public class AccountsImpl implements AccountsInterface{
 
 
     }
+
 
     @Override
     public AccountsModel updateAccount(AccountsModel account) {

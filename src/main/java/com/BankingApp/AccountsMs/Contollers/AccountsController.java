@@ -2,9 +2,12 @@ package com.BankingApp.AccountsMs.Contollers;
 
 import com.BankingApp.AccountsMs.Models.AccountsModel;
 import com.BankingApp.AccountsMs.Serices.AccountsInterface;
+import jakarta.websocket.server.PathParam;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.math.BigDecimal;
@@ -25,17 +28,12 @@ public class AccountsController {
         return accountsInterface.createAccount(userId,account);
     }
 
-    @PutMapping
+    @PutMapping("/update")
     public AccountsModel updateAccount(@RequestBody AccountsModel account) {
         logger.info("Received request to update account: {}", account);
         return accountsInterface.updateAccount(account);
     }
 
-    @PutMapping("/update")
-    public AccountsModel updateAccountByQuery(@RequestParam Long userId, @RequestParam Long accountId, @RequestBody AccountsModel account) {
-        logger.info("Updating account with user ID: {} and account ID: {}", userId, accountId);
-        return accountsInterface.updateAccount(account);
-    }
 
     @GetMapping
     public List<AccountsModel> getAllAccounts() {
@@ -62,7 +60,7 @@ public class AccountsController {
     }
 
     @GetMapping("/balance")
-    public BigDecimal getBalance(@RequestParam(required = false) Long userId, @RequestParam(required = false) Long accountId) {
+    public BigDecimal getBalance(@RequestParam Long userId, @RequestParam Long accountId) {
         if (userId != null) {
             logger.info("Fetching balance for user ID: {}", userId);
             return accountsInterface.getBalanceByUserId(userId);
@@ -70,7 +68,7 @@ public class AccountsController {
             logger.info("Fetching balance for account ID: {}", accountId);
             return accountsInterface.getBalanceByAccountId(accountId);
         }
-        return BigDecimal.ZERO;
+      return BigDecimal.ZERO;
     }
 
     @GetMapping("/balance/{userId}")
@@ -78,6 +76,5 @@ public class AccountsController {
         logger.info("Fetching balance for user ID: {}", userId);
         return accountsInterface.getBalanceByUserId(userId);
     }
-
 
 }

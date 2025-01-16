@@ -32,7 +32,7 @@ public class AccountsModel {
     private String accountType;
 
     @Column(name = "balance", columnDefinition = "DECIMAL(15,2) default 0.0")
-    private BigDecimal balance = BigDecimal.ZERO;
+    private BigDecimal balance;
 
     @Column(name = "currency", columnDefinition = "VARCHAR(10) default 'USD'")
     private String currency = "USD";
