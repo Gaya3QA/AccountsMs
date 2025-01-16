@@ -8,6 +8,7 @@ import com.BankingApp.AccountsMs.Models.UserModel;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
 
@@ -24,11 +25,15 @@ public class AccountsImpl implements AccountsInterface{
     @Autowired
     private RestTemplate restTemplate;
 
+    @Value("${user.ms.url}")
+    String url;
+
     @Override
     public AccountsModel createAccount(Long userId, AccountsModel account) {
         // Get the user details using RestTemplate to communicate with the Users Microservice
         // Fetch user details from the Users microservice using RestTemplate
-        String userServiceUrl = "http://host.docker.internal:8080/user/" +userId;
+
+        String userServiceUrl = url +"/" +userId;
         UserModel user = restTemplate.getForObject(userServiceUrl, UserModel.class);
 
         if (user == null) {
